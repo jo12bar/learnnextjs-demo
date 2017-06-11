@@ -5,6 +5,16 @@ const PostLinkList = ({ posts }) => (
     {posts.map((post) => (
       <li key={post.id}><PostLink id={post.id} title={post.title} /></li>
     ))}
+    <style jsx>{`
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        margin: 5px 0;
+      }
+    `}</style>
   </ul>
 );
 
