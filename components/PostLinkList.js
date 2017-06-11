@@ -1,9 +1,9 @@
 import PostLink from './PostLink';
 
-const PostLinkList = ({ shows }) => (
+const PostLinkList = ({ posts }) => (
   <ul>
-    {shows.map((show) => (
-      <li key={show.id}><PostLink id={show.id} name={show.name} /></li>
+    {posts.map((post) => (
+      <li key={post.id}><PostLink id={post.id} title={post.title} /></li>
     ))}
   </ul>
 );

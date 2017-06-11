@@ -1,24 +1,14 @@
 import fetch from 'isomorphic-unfetch';
+import getPosts from '../util/getPosts';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import PostLinkList from '../components/PostLinkList';
 
-const Index = ({ shows }) => (
+const Index = () => (
   <Layout>
-    <h1>Batman TV Shows</h1>
-    <PostLinkList shows={shows} />
+    <h1>My Blog</h1>
+    <PostLinkList posts={getPosts()} />
   </Layout>
 );
-
-Index.getInitialProps = async () => {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
-  const data = await res.json();
-
-  const shows = data.map((datum) => datum.show);
-
-  console.log(`Show data fetched. Count: ${data.length}`);
-
-  return { shows };
-};
 
 export default Index;
