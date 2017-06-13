@@ -16,6 +16,9 @@ const StyledH2 = styled('h2', {
 
 const StyledH3 = styled('h3', {
   ...baseHeadingStyles,
+  margin: 0,
+  padding: 0,
+  textTransform: 'uppercase',
 });
 
 const StyledH4 = styled('h4', {
