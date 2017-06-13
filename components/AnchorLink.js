@@ -15,7 +15,12 @@ const BaseLink = styled('a', {
 
 const AnchorLink = (props) => (
   <Link {...props}>
-    <BaseLink className={props.className}>{props.children}</BaseLink>
+    <BaseLink
+      className={props.className}
+      href={props.href}
+    >
+      {props.children}
+    </BaseLink>
   </Link>
 );
 

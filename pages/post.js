@@ -11,7 +11,7 @@ const Post = ({ url }) => (
 
     <MarkdownPost source={dedent`
       This is our blog post.
-      Yes. We can have a [link](/link).
+      Yes. We can have a [link](https://github.com/jo12bar/learnnextjs-demo).
       And we can have a title as well.
 
       ### This is a title.
