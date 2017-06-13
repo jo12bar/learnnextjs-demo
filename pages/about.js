@@ -1,8 +1,9 @@
 import Layout from '../components/Layout';
+import Paragraph from '../components/Paragraph';
 
 const About = () => (
   <Layout>
-    <p>This is the about page</p>
+    <Paragraph>This is the about page</Paragraph>
   </Layout>
 );
 

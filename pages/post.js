@@ -1,45 +1,23 @@
 import dedent from 'dedent';
 import fetch from 'isomorphic-unfetch';
+import H1 from '../components/H1.js';
 import Layout from '../components/Layout.js';
-import Markdown from 'react-markdown';
+import MarkdownPost from '../components/MarkdownPost';
 import { fonts } from '../theme';
 
 const Post = ({ url }) => (
   <Layout>
-    <h1>{url.query.title}</h1>
+    <H1>{url.query.title}</H1>
 
-    <div className='markdown'>
-      <Markdown source={dedent`
-        This is our blog post.
-        Yes. We can have a [link](/link).
-        And we can have a title as well.
+    <MarkdownPost source={dedent`
+      This is our blog post.
+      Yes. We can have a [link](/link).
+      And we can have a title as well.
 
-        ### This is a title.
+      ### This is a title.
 
-        And here's the content.
-      `} />
-    </div>
-
-    <style jsx global>{`
-      .markdown {
-        font-family: ${fonts.default};
-      }
-
-      .markdown a {
-        text-decoration: none;
-        color: blue;
-      }
-
-      .markdown a:hover {
-        opacity: .6;
-      }
-
-      .markdown h3 {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-      }
-    `}</style>
+      And here's the content.
+    `} />
   </Layout>
 );
 

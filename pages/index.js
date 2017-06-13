@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import getPosts from '../util/getPosts';
+import H1 from '../components/H1.js';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import PostLinkList from '../components/PostLinkList';
@@ -7,14 +8,8 @@ import { fonts } from '../theme';
 
 const Index = () => (
   <Layout>
-    <h1>My Blog</h1>
+    <H1>My Blog</H1>
     <PostLinkList posts={getPosts()} />
-
-    <style jsx>{`
-      h1 {
-        font-family: ${fonts.default};
-      }
-    `}</style>
   </Layout>
 );
 

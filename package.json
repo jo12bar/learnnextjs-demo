@@ -20,6 +20,9 @@
     "next": "^2.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-markdown": "2.5.0"
+    "react-markdown": "2.5.0",
+    "styletron-client": "2.5.7",
+    "styletron-react": "2.5.8",
+    "styletron-server": "2.5.7"
   }
 }
