@@ -1,13 +1,13 @@
 import dedent from 'dedent';
 import fetch from 'isomorphic-unfetch';
-import H1 from '../components/H1.js';
+import Heading from '../components/Heading.js';
 import Layout from '../components/Layout.js';
 import MarkdownPost from '../components/MarkdownPost';
 import { fonts } from '../theme';
 
 const Post = ({ url }) => (
   <Layout>
-    <H1>{url.query.title}</H1>
+    <Heading level={1}>{url.query.title}</Heading>
 
     <MarkdownPost source={dedent`
       This is our blog post.
