@@ -15,7 +15,6 @@ export default function getStyletron() {
 
   return styletron;
 }
-if (typeof window !== 'undefined') {window.global = {}; window.global['getStyletron'] = getStyletron;}
 
 export function flush() {
   const styletron_ = styletron;

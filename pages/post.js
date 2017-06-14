@@ -92,7 +92,7 @@ const Post = ({ url }) => (
 
       \`\`\`js
       // Code block!
-      // If syntax highlighting is set up, then this should look like JavaScript
+      // If syntax highlighting is set up, then this should look like JavaScript.
 
       console.log('This one is made with 3 backticks.');
       \`\`\`
