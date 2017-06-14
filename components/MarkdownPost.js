@@ -1,5 +1,6 @@
 import Heading from './Heading';
 import AnchorLink from './AnchorLink';
+import DecoratedCodeBlock from './DecoratedCodeBlock';
 import Markdown from 'react-markdown';
 import { styled } from 'styletron-react';
 import { fonts } from '../theme';
@@ -7,6 +8,7 @@ import { fonts } from '../theme';
 const markdownCustomRenderers = {
   heading: Heading,
   link: AnchorLink,
+  codeblock: DecoratedCodeBlock,
 };
 
 const MarkdownPost = (props) =>

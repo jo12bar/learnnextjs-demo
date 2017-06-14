@@ -14,6 +14,16 @@ class CustomDocument extends Document {
       <html>
         <Head>
           <title>My Blog | learnnextjs.com Demo</title>
+          
+          <link
+            rel='stylesheet'
+            href='/static/vendor/normalize.css/normalize.min.css'
+          />
+
+          <link
+            rel='stylesheet'
+            href='/static/vendor/highlight.js/css/solarized-light.min.css'
+          />
 
           {this.props.stylesheets.map((sheet, i) => (
             <style
